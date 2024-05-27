@@ -1,17 +1,18 @@
-from langchain_community.vectorstores import PGVector
-from langchain.schema import Document
-import os
-from openai import OpenAI
-import instructor
 import json
+import logging
+import os
+
 import feedparser
+import instructor
+import psycopg2
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-from models import NewsCategories
-import logging
-import psycopg2
+from langchain.schema import Document
 from langchain_community.embeddings import BedrockEmbeddings
+from langchain_community.vectorstores import PGVector
+from openai import OpenAI
 
+from models import NewsCategories
 
 load_dotenv()
 logging.basicConfig(level=logging.INFO)

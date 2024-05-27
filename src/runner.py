@@ -1,7 +1,9 @@
-from groqqer import rss_to_vector, logger
-from webhook import send_nfn
 import os
+
 from dotenv import load_dotenv
+
+from groqqer import logger, rss_to_vector
+from webhook import send_nfn
 
 
 def main():

@@ -1,8 +1,10 @@
-from groqqer import client, vector_search, gen_query_vector, logger
-from datetime import datetime
-import requests
 import os
+from datetime import datetime
+
+import requests
 from dotenv import load_dotenv
+
+from groqqer import client, gen_query_vector, logger, vector_search
 
 
 def send_nfn():
